@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">FireEx</string>
+    <string name="title_activity_fir_point_scan_data">FirPointScanData</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="file_provider_authority" translatable="false">com.example.fireex.fileprovider</string>
+    <string name="identification_number_clear">Identification Number clear</string>
+    <string name="string_my_profile">My Profile</string>
+    <string-array name="yes_no">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="extinguisher">
+        <item>Water</item>
+        <item>Foam</item>
+        <item>CO2</item>
+        <item>DCP</item>
+    </string-array>
+
+    <string name="string_buildingName">BuildingName:</string>
+    <string name="string_extinguisherNum">Extinguisher:</string>
+    <string name="string_extinguisherType">ExtinguisherType:</string>
+    <string name="string_firePointNum">FirePointNum:</string>
+    <string name="string_address" >Address:</string>
+    <string name="slno">SLno</string>
+    <string name="capacity">Capacity</string>
+    <string name="paint_in_good_condition">Paint in Good condition</string>
+    <string name="exterior_no_damage_corrosion">Exterior(No damage/corrosion)</string>
+    <string name="identification_label">Identification_label</string>
+    <string name="operating_instruction_clear">Operating instruction clear</string>
+    <string name="cap_no_cracks_vent_hole_free_polish">Cap(no cracks,vent hole free,polish)</string>
+    <string name="operating_spinner">Operating_Spinner</string>
+    <string name="discharge_hose_horn_nozzle">Discharge hose/horn/nozzle</string>
+    <string name="discharge_spinner">Discharge_Spinner</string>
+    <string name="control_valve">Control valve</string>
+    <string name="washer">Washer</string>
+    <string name="control_label_spinner">Control_label_Spinner</string>
+    <string name="plunger_and_piercer_free_movement">Plunger and piercer free movement</string>
+    <string name="interior_no_corrosion_damages">Interior - No corrosion,damages</string>
+    <string name="intier_discarge_tube_siphon_tube">Intier discarge tube,siphon tube</string>
+    <string name="gas_cartridge_weight_seal">Gas cartridge-weight,seal</string>
+    <string name="contents_weight_liquid_level">contents-weight,liquid level</string>
+    <string name="powder_free_following_no_cakeing">powder(Free following,no cakeing)</string>
+    <string name="safety_pin_clip_properly_fixed">Safety pin/clip properly fixed</string>
+    <string name="safety">Safety</string>
+    <string name="carrying_handle_squeesing">Carrying handle squeesing</string>
+    <string name="inspection_tag_in_place">Inspection tag in place</string>
+    <string name="carrying">Carrying</string>
+    <string name="login">Login</string>
+
+</resources>

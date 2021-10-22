@@ -1,0 +1,437 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16"
+            android:orientation="vertical">
+
+            <include layout="@layout/viw_image_list" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/slNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="SLno"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/loginInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/typeofExtinguisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Type of Extinguisher"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/TypeofExtinguisherSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/slNum" />
+
+            <Spinner
+                android:id="@+id/TypeofExtinguisherSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/extinguisher"
+                android:hint="Type of Extinguisher" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textCapacityInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Capacity"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/Exterior_label"
+                app:layout_constraintTop_toBottomOf="@+id/TypeofExtinguisherSpinner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capacityInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/Exterior_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Exterior(No damage/corrosion)"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/ExteriorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Exterior(No damage/corrosion)" />
+
+
+            <TextView
+                android:id="@+id/Paint_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Paint in Good condition"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/PaintSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Exterior(No damage/corrosion)" />
+
+
+            <TextView
+                android:id="@+id/Identification_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Identification Number clear"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Identification_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Identification_label" />
+
+
+            <TextView
+                android:id="@+id/Operating_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Operating instruction clear"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Operating_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Operating_Spinner" />
+
+            <TextView
+                android:id="@+id/cap_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Cap(no cracks,vent hole free,polish)"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/cap_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Operating_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Discharge_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Discharge hose/horn/nozzle"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Discharge_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Discharge_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Control_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Control valve"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Control_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+            <TextView
+                android:id="@+id/Washer_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Washer"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Washer_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Plunger_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Plunger and piercer free movement"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+
+            <Spinner
+                android:id="@+id/Plunger_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Interior_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Interior - No corrosion,damages"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+            <Spinner
+                android:id="@+id/Interior_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Intier_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Intier discarge tube,siphon tube"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+            <Spinner
+                android:id="@+id/Intier_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+
+            <TextView
+                android:id="@+id/Gas_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Gas cartridge-weight,seal" />
+
+            <Spinner
+                android:id="@+id/Gas_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Control_label_Spinner" />
+
+
+            <TextView
+                android:id="@+id/contents_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="contents-weight,liquid level" />
+
+            <Spinner
+                android:id="@+id/contents_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="contents-weight,liquid level" />
+
+
+            <TextView
+                android:id="@+id/powder_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="powder(Free following,no cakeing)"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+            <Spinner
+                android:id="@+id/powder_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="powder(Free following,no cakeing)" />
+
+            <TextView
+                android:id="@+id/Safety_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Safety pin/clip properly fixed"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+            <Spinner
+                android:id="@+id/Safety_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Safety" />
+
+
+            <TextView
+                android:id="@+id/Carrying_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Carrying handle squeesing"
+                app:boxBackgroundColor="@android:color/transparent" />
+
+            <Spinner
+                android:id="@+id/Carrying_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Carrying"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/Inspection_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:hint="Inspection tag in place"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/Inspection_Spinner"
+                app:layout_constraintTop_toBottomOf="@+id/Carrying_Spinner" />
+
+            <Spinner
+                android:id="@+id/Inspection_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                android:entries="@array/yes_no"
+                android:hint="Carrying" />
+
+
+            <TextView
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/scan_button"
+                android:onClick="onSaveClick"
+                android:padding="@dimen/dp_12"
+                android:text="Generate PDF"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/viewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/scan_button"
+                android:padding="@dimen/dp_12"
+                android:text="View PDF"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
