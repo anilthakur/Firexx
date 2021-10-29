@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     DBHelper dbHelper;
     private Activity mActivity;
     private static final int MY_PERMISSIONS_REQUEST_CODE = 123;
+   private String aws_secret="ABCDEF+c2L7yXeGvUyrPgYsDnWRRC1AYEXAMPLE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
